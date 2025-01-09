@@ -6,142 +6,146 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Realco</title>
 </head>
 <body>
-    <section class="notification">
-        <span>blank</span>
-        <p>Get your dream house in a week.</p>
+    <section class="notification bg-[var(--green-top)] flex items-center justify-between px-24 py-6">
+        <span class="text-[var(--green-top)]">blank</span>
+        <p class="text-[var(--white)] text-[1.2rem]">Get your dream house in a week.</p>
         <img src="./icons/xTop.svg" alt="">
     </section>
 
-    <header>
+    <header class="flex px-32 py-8 justify-between items-center">
         <img src="./icons/realcoLogo.svg" alt="">
-        <div class="mainHeader">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Properties <img src="./icons/expand_more.svg" alt=""></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+        <div class="mainHeader w-[62%] flex items-center justify-between">
+            <nav class="relative left-24">
+                <ul class="flex gap-[2.6rem]">
+                    <li class="list-none"><a href="#" class="no-underline text-[var(--regular-text)] text-[1.2rem]">Home</a></li>
+                    <li class="list-none"><a href="#" class="no-underline text-[var(--regular-text)] text-[1.2rem] flex">Properties <img src="./icons/expand_more.svg" alt="" class="w-[.8rem] h-[.8rem] relative left-[.6rem] top-[0.4rem]"></a></li>
+                    <li class="list-none"><a href="#" class="no-underline text-[var(--regular-text)] text-[1.2rem]">About</a></li>
+                    <li class="list-none"><a href="#" class="no-underline text-[var(--regular-text)] text-[1.2rem]">Contact</a></li>
                 </ul>
             </nav>
-            <div class="search">
-                <img src="./icons/search.svg" alt="">
-                <input type="text" placeholder="Search">
+            <div class="search flex relative left-32 gap-[4px]">
+                <img src="./icons/search.svg" alt="" class="w-[1.4rem] h-[1.4rem] relative top-[.2rem]">
+                <input type="text" placeholder="Search" class="text-[1.2rem] border-0 w-[30%] outline-none">
             </div>
 
-            <div class="btns">
-                <button class="btn1">
-                    <img src="./icons/shopping_bag.svg" alt="">
+            <div class="btns flex items-center gap-4">
+                <button class="btn1 bg-[var(--white)] border border-[rgb(219,214,214)] w-32 flex items-center justify-center text-[1.2rem] gap-1 py-1 px-0 rounded-lg shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)]">
+                    <img src="./icons/shopping_bag.svg" alt="" class="h-[1.8rem] w-[1.8rem]">
                     Cart
                 </button>
-                <button class="btn2">
+                <button class="btn2 bg-[var(--orange-button)] border border-[var(--orange-button)] w-40 flex items-center justify-center text-[1.2rem] gap-1 py-1 px-0 text-[var(--white)] rounded-lg shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)]">
                     Find a property
                 </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="mainLeft">
-            <img src="./icons/cornerT.svg" alt="" id="corner1">
-            <img src="./icons/cornerB.svg" alt="" id="corner2">
+    <main class="flex w-full">
+        <div class="mainLeft flex flex-col bg-[rgb(242,248,248)] w-1/2 items-center justify-center">
+            <img src="./icons/cornerT.svg" alt="" id="corner1" class="relative h-40 w-40 right-[25rem]">
+            <img src="./icons/cornerB.svg" alt="" id="corner2" class="relative h-40 w-40 top-[34.5rem] left-[24.8em]">
             
-            <div class="mainLeftContent">
-                <span>Find your dream place</span>
-                <h1>Find house for your family in minutes</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam culpa quam. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, doloremque.</p>
-                <div class="mainSearch">
-                    <img src="./icons/search.svg" alt="">
-                    <input type="text" placeholder="Search">
-                    <button class="btn2">
+            <div class="mainLeftContent flex flex-col p-16 items-start justify-center relative bottom-[10rem] left-16">
+                <span class="border border-[var(--gray-button)] bg-[var(--gray-button)] h-8 flex items-center justify-center rounded-full w-52">Find your dream place</span>
+                <h1 class="text-[4.4rem] font-normal">Find house for your family in minutes</h1>
+                <p class="text-[1.4rem] text-[var(--secondary-color)] pr-36">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam culpa quam. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, doloremque.</p>
+                <div class="mainSearch flex items-center w-full mt-8 gap-2.5">
+                    <img src="./icons/search.svg" alt="" class="relative left-[1.4rem] z-10 w-[1.4rem] h-[1.4rem]">
+                    <input type="text" placeholder="Search" class="relative right-8 h-12 w-[36%] px-16 border border-[rgb(219,214,214)] outline-none text-[1.4rem] rounded-lg shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)]">
+                    <button class="btn2 bg-[var(--orange-button)] border border-[var(--orange-button)] flex items-center justify-center text-[1.2rem] gap-1 py-1 px-0 text-[var(--white)] rounded-lg w-56 relative right-8 h-12 shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)]">
                         Find a property
                     </button>
                 </div>
             </div>
             
         </div>
-        <div class="mainRight"></div>
+        <div class="mainRight w-1/2 bg-[url('./images/background1.jpg')] bg-no-repeat bg-cover"></div>
     </main>
 
-    <section class="logoIpsum"> 
-        <p>As seen on the world's best <br> magazines and media</p>
-        <div class="ipsumLogos">
-            <img src="./icons/logo1.svg" alt="">
-            <img src="./icons/logo2.svg" alt="">
-            <img src="./icons/logo3.svg" alt="">
-            <img src="./icons/logo4.svg" alt="">
-            <img src="./icons/logo5.svg" alt="">
+    <section class="logoIpsum px-32 py-32 flex justify-between items-center"> 
+        <p class="text-[1.2rem]">As seen on the world's best <br> magazines and media</p>
+        <div class="ipsumLogos flex gap-12">
+            <img src="./icons/logo1.svg" alt="" class="w-36">
+            <img src="./icons/logo2.svg" alt="" class="w-36">
+            <img src="./icons/logo3.svg" alt="" class="w-36">
+            <img src="./icons/logo4.svg" alt="" class="w-36">
+            <img src="./icons/logo5.svg" alt="" class="w-36">
         </div>
     </section>
 
-    <section class="howItWorks">
-        <h1>How it works</h1>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eos laborum harum quas error qui exercitationem ex delectus voluptatibus enim.</span>
-        <div class="workBoxes">
-            <div class="workBox">
+    <section class="howItWorks flex flex-col items-center justify-center mt-16">
+        <h1 class="text-[4rem] font-semibold">How it works</h1>
+        <span class="text-[1.4rem] px-[24rem] py-8 text-center text-[var(--secondary-color)]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque eos laborum harum quas error qui exercitationem ex delectus voluptatibus enim.</span>
+        <div class="workBoxes flex my-8 mx-32 gap-[2.6rem]">
+            <div class="workBox rounded-[.6rem] border border-[rgb(219,214,214)] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] flex flex-col items-center py-16 px-6 gap-4">
                 <img src="./icons/property.svg" alt="">
-                <h3>Find property</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
+                <h3 class="text-[1.6rem] font-semibold">Find property</h3>
+                <p class="text-[1rem] text-center text-[var(--secondary-color)]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
             </div>
-            <div class="workBox">
+            <div class="workBox rounded-[.6rem] border border-[rgb(219,214,214)] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] flex flex-col items-center py-16 px-6 gap-4">
                 <img src="./icons/deal.svg" alt="">
-                <h3>Make a deal</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
+                <h3 class="text-[1.6rem] font-semibold">Make a deal</h3>
+                <p class="text-[1rem] text-center text-[var(--secondary-color)]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
             </div>
-            <div class="workBox">
+            <div class="workBox rounded-[.6rem] border border-[rgb(219,214,214)] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] flex flex-col items-center py-16 px-6 gap-4">
                 <img src="./icons/key.svg" alt="">
-                <h3>Get your keys</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
+                <h3 class="text-[1.6rem] font-semibold">Get your keys</h3>
+                <p class="text-[1rem] text-center text-[var(--secondary-color)]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, assumenda? Odit quasi sequi repudiandae odio tenetur, praesentium maxime magni quod eius in eligendi saepe ducimus.</p>
             </div>
         </div>
     </section>
 
-    <section class="info1">
-        <div class="info1Left">
-            <span>Comfort first</span>
-            <h1>The best houses for <br> family comfort</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam veniam aspernatur neque illum quia voluptatum ipsum earum excepturi quod.</p>
-            <div class="btns">
-                <button class="btn1">
+
+    <section class="info1 my-16 mx-32 flex">
+        <div class="info1Left w-1/2 my-16 flex flex-col justify-center items-start gap-8">
+            <span class="text-[1.2rem] bg-[var(--gray-button)] w-40 flex items-center justify-center h-8 rounded-full">Comfort first</span>
+            <h1 class="text-[4rem] font-semibold">The best houses for <br> family comfort</h1>
+            <p class="text-[1.4rem] text-[var(--secondary-color)] pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam veniam aspernatur neque illum quia voluptatum ipsum earum excepturi quod.</p>
+            <div class="btns flex gap-8">
+                <button class="btn1 w-72 h-14 text-[1.2rem] bg-[var(--white)] border border-[rgb(219,214,214)] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] rounded-[8px]" >
                     Explore properties
                 </button>
-                <button class="btn3">
-                    Contact agent <img src="./icons/caretRight.svg" alt="">
+                <button class="btn3 w-72 h-14 text-[1.2rem] bg-[var(--white)] border-none relative flex items-center gap-[1rem] ">
+                    Contact agent <img src="./icons/caretRight.svg" alt="" class="relative h-4">
                 </button>
             </div>
         </div>
-        <img src="./images/background2.jpg" alt="" id="back2">
+        <img src="./images/background2.jpg" alt="" id="back2" class="w-1/2">
     </section>
 
-    <section class="info2">
-        <img src="./images/background3.jpg" alt="" id="back3">
-        <div class="info1Right">
-            <span>Quick and Easy</span>
-            <h1>Fast forward process</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam veniam aspernatur neque illum quia voluptatum ipsum earum excepturi quod.</p>
 
-            <div class="info2Boxes">
-                <div class="info2Box">
+
+    <section class="info2 flex my-16 mx-32 gap-16">
+        <img src="./images/background3.jpg" alt="" id="back3" class="w-1/2 mt-8">
+        <div class="info1Right w-1/2 my-16 flex flex-col justify-center items-start gap-8">
+            <span class="text-[1.2rem] bg-[var(--gray-button)] w-40 flex items-center justify-center h-8 rounded-full">Quick and Easy</span>
+            <h1 class="text-[4rem] font-semibold">Fast forward process</h1>
+            <p class="text-[1.4rem] text-[var(--secondary-color)] pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam veniam aspernatur neque illum quia voluptatum ipsum earum excepturi quod.</p>
+
+            <div class="info2Boxes flex">
+                <div class="info2Box flex justify-center items-start flex-col gap-4">
                     <img src="./icons/price.svg" alt="">
-                    <h2>Affordable prices</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, fugit!</p>
+                    <h2 class="font-semibold text-[1.4rem]">Affordable prices</h2>
+                    <p class="text-[1.4rem] text-[var(--secondary-color)] pr-16">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, fugit!</p>
                 </div>
-                <div class="info2Box">
+                <div class="info2Box flex justify-center items-start flex-col gap-4">
                     <img src="./icons/paper.svg" alt="">
-                    <h2>Less paper work</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nobis.</p>
+                    <h2 class="font-semibold text-[1.4rem]">Less paper work</h2>
+                    <p class="text-[1.4rem] text-[var(--secondary-color)] pr-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nobis.</p>
                 </div>
             </div>
 
-            <div class="btns">
-                <button class="btn1">
+            <div class="btns flex gap-8">
+                <button class="btn1 w-72 h-14 text-[1.2rem] bg-[var(--white)] border border-[rgb(219,214,214)] shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] rounded-[8px]">
                     Explore properties
                 </button>
-                <button class="btn3">
-                    Contact agent <img src="./icons/caretRight.svg" alt="">
+                <button class="btn3 w-72 h-14 text-[1.2rem] bg-[var(--white)] border-none relative left-2 flex items-center gap-[1rem] ">
+                    Contact agent <img src="./icons/caretRight.svg" alt="" class="relative h-4">
                 </button>
             </div>
         </div>
